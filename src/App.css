@@ -16,25 +16,24 @@ header {
     background: #222831;
 }
 
-header p,
-footer p {
+header p {
     color: #DDDDDD;
     font-weight: bold;
     margin: 5px 0px;
 }
 
 header .logo {
-    font-size: 50px;
+    font-size: 30px;
 }
 
 header .logoPhrase {
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 header .logoPhrase span {
     font-style: oblique;
-    font-size: 12px;
+    font-size: 10px;
     color: #F05454;
 }
 
@@ -49,7 +48,11 @@ footer {
 }
 
 footer p {
+    color: #DDDDDD;
+    font-weight: bold;
     text-align: center;
+    font-size: 12px;
+    padding: 0px 5px;
 }
 
 footer p span {
@@ -58,11 +61,87 @@ footer p span {
 }
 
 main {
+    background-position: center;
+    background-size: cover;
     height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .container .trafficLights {
+    width: 150px;
+    height: 35vh;
+    background: #222831;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .container .trafficLights div {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+main .container .trafficLights .redLight {
+    background: red;
+}
+
+main .container .trafficLights .yellowLight {
+    background: yellow;
+}
+
+main .container .trafficLights .greenLight {
+    background: green;
+}
+
+main .container .buttonContainer {
+    width: 70%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main .container .buttonContainer button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    background: #30475E;
+    flex-wrap: wrap;
+}
+
+main .container .buttonContainer .redLightButton {
+    color: red;
+    border-color: red;
+}
+
+main .container .buttonContainer .yellowLightButton {
+    color: yellow;
+    border-color: yellow;
+}
+
+main .container .buttonContainer .greenLightButton {
+    color: green;
+    border-color: green;
 }
 
 @media screen and (min-width:250px){
-    header, footer {
+    header {
         padding: 5px 20px;
     }
 }
@@ -76,15 +155,27 @@ main {
 }
 
 @media screen and (min-width:400px){
-    
+    header .logoPhrase, footer p {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width:500px){
-
+    header, footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width:600px){
+    header .logoPhrase, footer p {
+        font-size: 20px;
+    }
 
+    header .logoPhrase span {
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width:700px){
@@ -92,7 +183,13 @@ main {
 }
 
 @media screen and (min-width:800px){
+    header .logoPhrase, footer p {
+        font-size: 25px;
+    }
 
+    header .logoPhrase span {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width:900px){
@@ -104,21 +201,52 @@ main {
 }
 
 @media screen and (min-width:1080px){
-
+    header .logoPhrase, footer p {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width:1260px){
-
 }
 
 @media screen and (min-width:1440px){
+    header .logo {
+        font-size: 60px;
+    }
+    
+    header .logoPhrase, footer p {
+        font-size: 35px;
+    }
 
+    header .logoPhrase span {
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width:1920px){
+    header .logo {
+        font-size: 70px;
+    }
 
+    header .logoPhrase, footer p {
+        font-size: 40px;
+    }
+
+    header .logoPhrase span {
+        font-size: 25px;
+    }
 }
 
 @media screen and (min-width:2560px){
+    header .logo {
+        font-size: 80px;
+    }
 
+    header .logoPhrase, footer p {
+        font-size: 60px;
+    }
+
+    header .logoPhrase span {
+        font-size: 40px;
+    }
 }
