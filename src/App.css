@@ -1,0 +1,300 @@
+html * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background: #DDDDDD;
+}
+
+header p {
+    color: #222831;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+header img {
+    width: 60%;
+}
+
+header .logoPhrase {
+    text-align: center;
+    font-size: 12px;
+}
+
+header .logoPhrase span {
+    font-style: oblique;
+    font-size: 10px;
+    color: #F05454;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background: #30475E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+footer p {
+    color: #DDDDDD;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 5px;
+}
+
+footer p span {
+    font-style: oblique;
+    color: #F05454;
+}
+
+main {
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container {
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .container .trafficLights {
+    width: 150px;
+    height: 35vh;
+    background: #222831;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .container .trafficLights div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+main .container .buttonContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+main .container .buttonContainer button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 20px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    background: #30475E;
+}
+
+main .container .buttonContainer .redLightButton {
+    color: red;
+    border-color: red;
+}
+
+main .container .buttonContainer .yellowLightButton {
+    color: yellow;
+    border-color: yellow;
+}
+
+main .container .buttonContainer .greenLightButton {
+    color: green;
+    border-color: green;
+}
+
+@media screen and (min-width:250px){
+    header {
+        padding: 5px 20px;
+    }
+}
+
+@media screen and (min-width:300px){
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img {
+        width: 140px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:350px){
+
+}
+
+@media screen and (min-width:400px){
+    header .logoPhrase, footer p {
+        font-size: 15px;
+    }
+
+    main .container .buttonContainer {
+        flex-direction: row;
+    }
+
+    main .container .buttonContainer button {
+        margin: 10px 10px;
+    }
+}
+
+@media screen and (min-width:500px){
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:600px){
+    header .logoPhrase, footer p {
+        font-size: 20px;
+    }
+
+    header .logoPhrase span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:700px){
+
+}
+
+@media screen and (min-width:800px){
+    header .logoPhrase, footer p {
+        font-size: 25px;
+    }
+
+    header .logoPhrase span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:900px){
+
+}
+
+@media screen and (min-width:1000px){
+
+}
+
+@media screen and (min-width:1080px){
+    header .logoPhrase, footer p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1260px){
+    header img {
+        width: 180px;
+    }
+
+    main .container .trafficLights {
+        width: 200px;
+    }
+
+    main .container .trafficLights div {
+        width: 60px;
+        height: 60px;
+    }
+
+    main .container .buttonContainer button {
+        font-size: 30px;
+    }    
+}
+
+@media screen and (min-width:1440px){
+    header img {
+        width: 220px;
+    }
+
+    header .logoPhrase, footer p {
+        font-size: 35px;
+    }
+
+    header .logoPhrase span {
+        font-size: 20px;
+    }
+
+    main .container .trafficLights {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width:1920px){
+    header img {
+        width: 330px;
+    }
+
+    header .logoPhrase, footer p {
+        font-size: 40px;
+    }
+
+    header .logoPhrase span {
+        font-size: 25px;
+    }
+
+    main .container .trafficLights {
+        width: 300px;
+    }
+
+    main .container .trafficLights div {
+        width: 80px;
+        height: 80px;
+    }
+
+    main .container .buttonContainer button {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:2560px){
+    header img {
+        width: 400px;
+    }
+
+    header .logoPhrase, footer p {
+        font-size: 60px;
+    }
+
+    header .logoPhrase span {
+        font-size: 40px;
+    }
+
+    main .container .trafficLights {
+        width: 400px;
+    }
+
+    main .container .trafficLights div {
+        width: 90px;
+        height: 90px;
+    }
+
+    main .container .buttonContainer button {
+        font-size: 60px;
+    }
+}
