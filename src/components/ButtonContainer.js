@@ -1,11 +1,15 @@
 import React from "react"
 
-const ButtonContainer = () => {
+const ButtonContainer = (props) => {
+    const lightsStateHandler = (newState) => {
+        props.setLightsState(newState)
+    }
+
     return (
         <article className="buttonContainer">
-            <button className="redLightButton">Stop</button>
-            <button className="yellowLightButton">Wait</button>
-            <button className="greenLightButton">Ready</button>
+            <button className="redLightButton" onClick={() => lightsStateHandler(1)}>Stop</button>
+            <button className="yellowLightButton" onClick={() => lightsStateHandler(2)}>Wait</button>
+            <button className="greenLightButton" onClick={() => lightsStateHandler(3)}>Ready</button>
         </article>
     )
 }

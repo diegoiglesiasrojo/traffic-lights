@@ -96,18 +96,6 @@ main .container .trafficLights div {
     border: 2px solid black;
 }
 
-main .container .trafficLights .redLight {
-    background: red;
-}
-
-main .container .trafficLights .yellowLight {
-    background: yellow;
-}
-
-main .container .trafficLights .greenLight {
-    background: green;
-}
-
 main .container .buttonContainer {
     display: flex;
     flex-direction: column;
@@ -244,10 +232,6 @@ main .container .buttonContainer .greenLightButton {
         width: 220px;
     }
 
-    header .logo {
-        font-size: 60px;
-    }
-    
     header .logoPhrase, footer p {
         font-size: 35px;
     }
@@ -264,10 +248,6 @@ main .container .buttonContainer .greenLightButton {
 @media screen and (min-width:1920px){
     header img {
         width: 330px;
-    }
-
-    header .logo {
-        font-size: 70px;
     }
 
     header .logoPhrase, footer p {
@@ -295,10 +275,6 @@ main .container .buttonContainer .greenLightButton {
 @media screen and (min-width:2560px){
     header img {
         width: 400px;
-    }
-
-    header .logo {
-        font-size: 80px;
     }
 
     header .logoPhrase, footer p {
