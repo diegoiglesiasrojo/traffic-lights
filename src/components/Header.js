@@ -4,7 +4,7 @@ import React from "react"
 const Header = () => {
     return (
         <header>
-            <p className="logo">Tach</p>
+            <img src="/assets/logo.png" alt="logo"/>
             <p className="logoPhrase">Your personal virtual wallet <span>and traffic light controller</span></p>
         </header>
     )
