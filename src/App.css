@@ -71,7 +71,7 @@ main {
 
 main .container {
     width: 80%;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,8 +90,8 @@ main .container .trafficLights {
 }
 
 main .container .trafficLights div {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 2px solid black;
 }
@@ -109,8 +109,6 @@ main .container .trafficLights .greenLight {
 }
 
 main .container .buttonContainer {
-    width: 70%;
-    height: 15vh;
     display: flex;
     flex-direction: column;
 }
@@ -118,11 +116,10 @@ main .container .buttonContainer {
 main .container .buttonContainer button {
     font-size: 20px;
     font-weight: bold;
-    padding: 8px;
-    margin: 10px 0px;
+    padding: 8px 20px;
+    margin: 5px 0px;
     border-radius: 10px;
     background: #30475E;
-    flex-wrap: wrap;
 }
 
 main .container .buttonContainer .redLightButton {
@@ -157,6 +154,14 @@ main .container .buttonContainer .greenLightButton {
 @media screen and (min-width:400px){
     header .logoPhrase, footer p {
         font-size: 15px;
+    }
+
+    main .container .buttonContainer {
+        flex-direction: row;
+    }
+
+    main .container .buttonContainer button {
+        margin: 10px 5px;
     }
 }
 
@@ -207,6 +212,14 @@ main .container .buttonContainer .greenLightButton {
 }
 
 @media screen and (min-width:1260px){
+    main .container .trafficLights div {
+        width: 60px;
+        height: 60px;
+    }
+
+    main .container .buttonContainer button {
+        font-size: 30px;
+    }    
 }
 
 @media screen and (min-width:1440px){
@@ -235,6 +248,15 @@ main .container .buttonContainer .greenLightButton {
     header .logoPhrase span {
         font-size: 25px;
     }
+
+    main .container .trafficLights div {
+        width: 80px;
+        height: 80px;
+    }
+
+    main .container .buttonContainer button {
+        font-size: 40px;
+    }
 }
 
 @media screen and (min-width:2560px){
@@ -248,5 +270,14 @@ main .container .buttonContainer .greenLightButton {
 
     header .logoPhrase span {
         font-size: 40px;
+    }
+
+    main .container .trafficLights div {
+        width: 90px;
+        height: 90px;
+    }
+
+    main .container .buttonContainer button {
+        font-size: 60px;
     }
 }
